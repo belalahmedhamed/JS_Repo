@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator</title>
+	    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="style.css" rel="stylesheet" >
+    <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body style=" margin:10px;text-align:center;align:center">
+	
+	<table border="10" align="center" style="margin-bottom:20px;">
+		<tr>
+			<td colspan="4" style="font-family:comic sans ms; text-align:center; color:white; background-color:gray;font-size:9pt">
+				JavaScript Calculator
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4"><input id="Formula" type="text" style="font-family:comic sans ms; text-align:center;font-size:10pt"></td>
+		</tr>
+		<tr>
+			<td colspan="3"><input id="Answer" type="text" style="width:150px; text-align:right;" value="0"></td>
+			<td><input type="button" style="width:50px" value="=" class="btn" onclick="EnterEqual()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="width:50px" value="1" class="btn" onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="2" class="btn" onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="3" class="btn" onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="+" class="btn" onclick="EnterNumber(this.value)"></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="width:50px" value="4" class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="5" class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="6"class="btn" onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="-" class="btn"  onclick="EnterNumber(this.value)"></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="width:50px" value="7" class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="8" class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="9" class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="*" class="btn" onclick="EnterNumber(this.value)"></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="width:50px" value="C" class="btn"onclick="EnterClear()"></td>
+			<td><input type="button" style="width:50px" value="0" class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="." class="btn"onclick="EnterNumber(this.value)"></td>
+			<td><input type="button" style="width:50px" value="/" class="btn"class="op" onclick="EnterNumber(this.value)"></td>
+		</tr>
+	</table>
+	<button><a href="snakeGame.html">snakeGame</a> </button>
+	<button><a href="game.html">Game</a> </button>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
